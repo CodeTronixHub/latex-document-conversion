@@ -1,0 +1,50 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage{graphicx}
+\usepackage{lipsum}
+
+\usepackage{background}
+\backgroundsetup{
+    placement=center,
+    scale=4,
+    contents={codetronix},
+    opacity=1
+}
+\setbeamertemplate{background}{\BgMaterial}
+
+\begin{document}
+
+
+
+\begin{frame}{Convert document to \LaTeX}
+
+    % Left column with images 1, 2, and 3
+    \begin{minipage}[t]{0.25\linewidth}
+        \begin{figure}
+            \includegraphics[height=0.2\textheight, keepaspectratio]{image/image1.jpg}
+        \end{figure}
+        \vspace{0.1cm}
+        \begin{figure}
+            \includegraphics[height=0.2\textheight, keepaspectratio]{image/image2.png}
+        \end{figure}
+        \vspace{0.1cm}
+        \begin{figure}
+            \includegraphics[height=0.2\textheight, keepaspectratio]{image/image3.png}
+        \end{figure}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.45\linewidth}
+        \begin{figure}
+            \includegraphics[width=\linewidth, keepaspectratio]{image/image4.png}
+        \end{figure}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.25\linewidth}
+        \begin{figure}
+            \vspace{10mm}
+            \includegraphics[height=0.4\textheight]{image/image5.png}
+        \end{figure}
+    \end{minipage}
+
+\end{frame}
+
+\end{document}
